@@ -11,6 +11,4 @@ RUN apt-get update &&\
     apt-get install -y debian-archive-keyring git-lfs libxml2-utils zip &&\
     rm -rf /var/lib/apt/lists/*
 
-USER solr
-
 ENTRYPOINT [ "aws" ]
